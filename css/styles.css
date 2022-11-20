@@ -8,6 +8,24 @@
 --team-b-color: #F5F4FA;
 }
 
+p,
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding-left: 0;
+}
+
+.conteiner {
+    width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
 body {
     font-family: Roboto, sans-serif;
 }
