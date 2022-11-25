@@ -1,3 +1,32 @@
+/* html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  outline: none;
+}
+html { height: 101%; } /* always display scrollbars */
+/* body { font-size: 62.5%; line-height: 1; font-family: Arial, Tahoma, Verdana, sans-serif; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+ol, ul { list-style: none; }
+
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+strong { font-weight: bold; } 
+
+input { outline: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+img { border: 0; max-width: 100%; }
+
+a { text-decoration: none; }
+a:hover { text-decoration: underline; } */ 
+/* ----------------------------------------------------------------------------------------- */
+
+
 :root {
 /* --primery-в-color: #F5F5F5; */
 --next-color: #FFFFFF;
@@ -61,6 +90,11 @@ body {
     padding-bottom: 25px;
 }
 
+.main-nav {
+display: flex;   
+align-items: center;
+}
+
 .header-logo {
 font-family: 'Raleway', sans-serif;
 font-weight: 700;
@@ -74,7 +108,16 @@ color: #000000;
 color: var(--hover-color);
 }
 
+.header-list {
+display: flex;
+margin-left: 93px;
+}
+
 .header-link {
+    display: block;
+padding-top: 32px;
+padding-bottom: 32px;
+
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
@@ -82,6 +125,18 @@ letter-spacing: 0.02em;
 color: var(--text-color);
 }
 
+.header-list .item + .item {
+    margin-left: 50px;
+}
+
+.kontakts-list {
+display: flex;
+margin: auto;
+}    
+
+.kontakts-list .item + .item {
+    margin-left: 40px;
+}
 .header-link:hover,
 .header-link:focus {
 color: var(--hover-color);
@@ -98,6 +153,8 @@ font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 color: var(--secondery-text-color);
+padding-top: 32px;
+padding-bottom: 32px;
 }
 
 .header-mail:hover,
@@ -111,7 +168,8 @@ color: var(--hover-color);
 .hero {
 background-color: var(--section-color);
 padding-top: 200px;
-padding-bottom: 200px; 
+padding-bottom: 200px;
+text-align: center; 
 }
 /* .hero-section {
 padding-top: 200px;
@@ -122,7 +180,7 @@ padding-bottom: 200px;
 font-weight: 900;
 font-size: 44px;
 line-height: 1.36;
-text-align: center;
+/* text-align: center; */
 letter-spacing: 0.06em;
 color: var(--next-color);
 background-color: var(--section-color);
@@ -137,14 +195,16 @@ font-size: 16px;
 line-height: 1.88;
 display: flex;
 align-items: center;
-text-align: center;
+/* text-align: center; */
 letter-spacing: 0.06em;
 color: var(--next-color);
 background-color: var(--hover-color);
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
 margin: 0 auto;
-display: block;
+display: inline-block;
+padding: 10px 24px;
+min-width: 200px;
 }
 
 
@@ -166,6 +226,17 @@ background-color: var(--next-color);
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+
+.features-list {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.features-items:not(:last-child) {
+    margin-right: 30px;
+}
+
 .features-title {
 font-size: 14px;
 line-height: 1.14;
@@ -193,10 +264,30 @@ color: var(--text-color);
 margin-bottom: 50px;
 }
 
+.photo-list {
+    display: flex;
+}
+
+.photo-gallery:not(:last-child) {
+    margin-right: 30px;
+}
+
 /*-----Команда-----*/
 
 .team {
     background-color: var(--team-b-color);
+}
+
+.team-list {
+    display: flex;
+}
+
+.team-gallery:not(:last-child) {
+    margin-right: 30px;
+}
+
+.team-gallery {
+    width: calc((100%-90px)/4);
 }
 
 .team-name {
@@ -276,6 +367,14 @@ margin-bottom: 50px;
 }
 /*-----Герой портфоліо-----*/
 
+.portfolio-items {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+
 .portfolio-btn {
 font-family: inherit;
 font-weight: 500;
@@ -283,7 +382,16 @@ font-size: 16px;
 line-height: 1.62;
 text-align: center;
 letter-spacing: 0.03em;
-color: var(--text-color);
+color: var(--text-color); 
+
+margin: 0 auto;
+display: inline-block;
+padding: 6px 22px;
+min-width: 112px;
+}
+
+.portfolio-btn {
+    margin-right: 8px;
 }
 
 .portfolio-btn:hover,
@@ -293,6 +401,25 @@ background-color: var(--hover-color);
 }
 
 /*-----Приклади робіт-----*/
+
+.portfolio-works {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-element {
+    width: 380px;
+    margin-right: 30px;
+}
+
+.flex-element:nth-child(3n)   {
+margin-right: 0px;
+}
 
 .portfolio-title {
 font-size: 18px;
