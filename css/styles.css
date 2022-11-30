@@ -306,7 +306,6 @@ letter-spacing: 0.03em;
 color: var(--text-color);
     margin: 0px auto 10px auto;
     padding-top: 30px;
-    text-align: center;
 }
 
 
@@ -316,10 +315,7 @@ line-height: 1.19;
 text-align: center;
 letter-spacing: 0.03em;
 color: var(--secondery-text-color);
-margin-bottom: 30px;
-    min-width: 76px;
-    max-width: 147px;
-    margin: 0 auto 0px auto; 
+    margin: 0px auto;
     padding-bottom: 30px;
 }
 
