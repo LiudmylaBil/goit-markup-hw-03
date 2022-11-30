@@ -356,6 +356,16 @@ color: var(--next-color);
 margin-top: 28px;
 margin-bottom: 12px;
 }
+
+.geolocation {
+    margin-top: 28px;
+    margin-bottom: 12px;
+}
+
+.mail {
+    margin-bottom: 12px;
+}
+
 .footer-mail,
 .footer-tel {
 font-style: normal;    
@@ -448,6 +458,7 @@ margin-right: 0px;
 .description {
     padding: 20px 24px;
     border: 1px solid #EEEEEE;
+    border-top: none;
 }
 
 .portfolio-title {
