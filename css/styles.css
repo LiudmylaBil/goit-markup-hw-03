@@ -184,7 +184,7 @@ letter-spacing: 0.06em;
 color: var(--next-color);
 background-color: var(--section-color);
 text-transform: uppercase;
-padding-bottom: 30px;  
+margin-bottom: 30px;  
 }
 
 .hero-btn {
@@ -328,10 +328,12 @@ font-size: 26px;
 line-height: 1.19;
 letter-spacing: 0.03em;
 color: var(--next-color);
+
 }
 
 .footer-span-logo {
 color: var(--hover-color);
+/* margin-bottom: 28px; */
 }
 
 .footer-adress-link {
@@ -340,7 +342,8 @@ font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
 color: var(--next-color);
-/* margin-top: 28px;     */
+margin-top: 28px;
+margin-bottom: 12px;
 }
 .footer-mail,
 .footer-tel {
