@@ -130,7 +130,7 @@ color: var(--text-color);
 
 .kontakts-list {
 display: flex;
-margin: auto;
+margin-left: 354px;
 }    
 
 .kontakts-list .item + .item {
@@ -152,6 +152,7 @@ font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 color: var(--secondery-text-color);
+display: block;
 padding-top: 32px;
 padding-bottom: 32px;
 }
@@ -290,6 +291,7 @@ margin-bottom: 50px;
 
 .team-gallery {
     width: calc((100%-90px)/4);
+background-color: #FFFFFF;    
 /* material shadow v1 */
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 0px 0px 4px 4px;
@@ -302,7 +304,8 @@ line-height: 1.19;
 text-align: center;
 letter-spacing: 0.03em;
 color: var(--text-color);
-    margin: 30px auto 10px auto;
+    margin: 0px auto 10px auto;
+    padding-top: 30px;
     text-align: center;
 }
 
@@ -316,7 +319,8 @@ color: var(--secondery-text-color);
 margin-bottom: 30px;
     min-width: 76px;
     max-width: 147px;
-    margin: 0 auto 30px auto; 
+    margin: 0 auto 0px auto; 
+    padding-bottom: 30px;
 }
 
 /*-----Футер-----*/
@@ -389,7 +393,8 @@ color: var(--hover-color);
 
 .portfolio-main {
 background-color: var(--primery-в-color);
-margin-bottom: 50px;    
+padding-top: 94px;
+padding-bottom: 50px;    
 }
 /*-----Герой портфоліо-----*/
 
