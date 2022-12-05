@@ -130,7 +130,7 @@ color: var(--text-color);
 
 .kontakts-list {
 display: flex;
-margin-left: 354px;
+margin-left: auto;
 }    
 
 .kontakts-list .item + .item {
@@ -170,6 +170,7 @@ background-color: var(--section-color);
 padding-top: 200px;
 padding-bottom: 200px;
 text-align: center; 
+
 }
 /* .hero-section {
 padding-top: 200px;
